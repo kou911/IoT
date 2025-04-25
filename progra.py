@@ -6,6 +6,7 @@ code = ""
 st = pyperclip.paste().split("\n")
 
 for i in st:
- code += (i[re.match(r"[0-9]+",i).end():]+"\n").lstrip()
+ i = i+"\n"
+ code += (i[re.match(r"[0-9]+",i).end():]).lstrip()
 
 pyperclip.copy(code)

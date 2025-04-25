@@ -16,7 +16,7 @@ GPIO.setup(LED, GPIO.OUT)
 # GPIO16の入力モード設定
 GPIO.setup(BUTTON, GPIO.IN)
 
-# 内部プルダウン設定 GPIO.setup(BUTTON, GPIO.IN, pull_up_down=GPIO.PUD_DOWN)
+# 内部プルダウン設定　GPIO.setup(BUTTON, GPIO.IN, pull_up_down=GPIO.PUD_DOWN)
 try:
     while True:
         time.sleep(0.1)
