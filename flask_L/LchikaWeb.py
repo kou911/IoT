@@ -21,11 +21,11 @@ def turn_off():
     return render_template('index.html', tmp="off!")
 
 @app.route("/on2")
-def turn_off():
+def turn_on1():
     GPIO.output(26, GPIO.LOW)
     return render_template('index.html', tmp="on!")
 
 @app.route("/off2")
-def turn_off():
+def turn_off2():
     GPIO.output(26, GPIO.LOW)
     return render_template('index.html', tmp="off!")

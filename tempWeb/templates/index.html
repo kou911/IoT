@@ -6,11 +6,12 @@
     <title>Document</title>
   </head>
   <body>
-    <h1>Lチカ</h1>
-    <form action="/send" method="POST" >
-      <input type="hidden" name="btn" value="ON">
-      <input type="submit" value="ON">
+    <h1>センサー</h1>
+    <form action="/temp" method="GET" >
+      <input type="hidden" name="btn" value="button">
+      <input type="submit" value="button">
       <br>
+      <h3>{{ tmp | safe}}</h3>
     </form>
   </body>
 </html>
