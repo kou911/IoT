@@ -10,12 +10,22 @@ def lchikaWeb():
     GPIO.setup(16, GPIO.OUT)
     return render_template('index.html')
 
-@app.route("/on")
+@app.route("/on1")
 def turn_on():
     GPIO.output(16, GPIO.HIGH)
     return render_template('index.html', tmp="on!")
 
-@app.route("/off")
+@app.route("/off1")
 def turn_off():
     GPIO.output(16, GPIO.LOW)
+    return render_template('index.html', tmp="off!")
+
+@app.route("/on2")
+def turn_off():
+    GPIO.output(26, GPIO.LOW)
+    return render_template('index.html', tmp="on!")
+
+@app.route("/off2")
+def turn_off():
+    GPIO.output(26, GPIO.LOW)
     return render_template('index.html', tmp="off!")
