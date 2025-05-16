@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
+</head>
+<body>
+<h1>Lチカ</h1>
+<form action="/onoff" method="POST" >
+<input type="hidden" name="btn" value="ON">
+<input type="submit" value="ON"><br>
+</form>
+<form action="/onoff" method="POST" >
+<input type="hidden" name="btn" value="OFF">
+<input type="submit" value="OFF"><br>
+</form>
+<h3>{{ tmp }}</h3>
+</body>
+</html>
